@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Futura';
+    src: url(./font/Futura\ Book\ font.ttf);
+}
+@font-face {
+    font-family: 'Futura bold';
+    src: url(./font/Futura\ Bold\ Italic\ font.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Futura';
+}
+body{
+    background-color: #000;
+}
+body::-webkit-scrollbar {
+    display: none; 
+  }
+header{
+    position: relative;
+    width: 1440px;
+    height: 200px;
+    background-color: #fff;
+    margin: auto;
+}
+header::before{
+    position: absolute;
+    content: '';
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 2px;
+    height: 146px;
+    background-color: #C42126;
+}
+.menuTop{
+    position: absolute;
+    width: 1200px;
+    left: 10%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+
+}
+.nav{
+    transform: translateX(50px);
+    list-style: none;
+}
+.nav li{
+    display: inline;
+    margin: 0 14px;
+}
+.nav a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.nav a:hover{
+    color: #ff7979;
+}
+.book{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.book img{
+    margin-right: 10px;
+}
+#reserve-table{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 90%;
+    height: 453px;
+    background-color: #fff;
+    z-index: 20;
+    display: none;
+    text-align: center;
+}
+#reserve-table p{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#reserve-table h1{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+#reserve-table input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    margin: 50px 40px;
+    font-size: 25px;
+}
+#reserve-table input::placeholder{
+    color: #000;
+    font-size: 20px;
+}
+#reserve-table a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin-left: 60%;
+    transform: translate(-50%,30px);
+}
+#reserve-table a p{
+    margin: 0 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#reserve-table a .bx-right-arrow-alt{
+    font-size: 26px;
+    color: #B89764;
+}
+.container{
+    width: 1440px;
+    background-color: #fff;
+    margin: auto;
+}
+.card-content{
+    width: 800px;
+    height: 250px;
+    margin: auto;
+    transform: translate(0,60px);
+    text-align: center;
+}
+.card-content h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+}
+.card-content h1{
+    color: #C42126;
+    font-size: 40px;
+    font-weight: bolder;
+    transform: translate(0,-40px);
+}
+.card-contacts{
+    position: relative;
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    margin-top: 72px;
+    display: flex;
+}
+.contacts-input{
+    position: absolute;
+    right: -80px;
+    width: 870px;
+    height: 675px;
+    background: #C3A16A33;
+}
+.contacts-input .name{
+   padding-top: 130px;
+}
+.contacts-input .name ,
+.email-phone
+{
+    transform: translateX(112px);
+    display:flex;
+    gap: 20px;
+}
+.message{
+    transform: translateX(112px);
+    gap: 20px;
+}
+.email-phone{
+    margin-top: 50px;
+}
+.message p{
+    transform: translateY(100px);
+}
+.contacts-input .name p,
+.email-phone p,
+.message p{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.contacts-input .name input,
+.email-phone input,
+.message input
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    padding-right: 180px;
+}
+.message input{
+    padding-right: 510px;
+    padding-top: 190px;
+}
+.send-mess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    transform: translateY(25px);
+}
+.send-mess .check-terms {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.send-mess button{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    gap: 12px;
+    color: #C42126;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.contacts-left{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+.contacts-left h3{
+    font-size: 17px;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+}
+.contacts-left p {
+    margin-top: 25px;
+    text-transform: none;
+    line-height: 1.3;
+}
+footer{
+    position: relative;
+    width: 1440px;
+    height: 600px;
+    background: #C42126;
+    margin: auto;
+}
+.card-sub{
+    position: absolute;
+    width: 700px;
+    left: 170px;
+    top: 70px;
+    color: #fff;
+}
+.card-sub h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Futura bold';
+    color: #fff;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.card-sub input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    margin: 30px 0;
+    margin-right: 20px;
+}
+.card-sub input::placeholder{
+    opacity: 0.8;
+    color: #fff;
+}
+.card-sub .checkbox{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    
+}
+.card-sub .checkbox input{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    line-height: 60px;
+}
+.card-sub .checkbox p{
+    opacity: 0.8;
+}
+.sub{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 550;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 50px;
+}
+.sub img{
+    width: 40px;
+}
+.sub p{
+    margin: 0 10px;
+    border-bottom: 2px solid #fff;
+}
+.addres{
+    position: absolute;
+    width: 500px;
+    right: 120px;
+    top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.addres .item-1{
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.addres .item-1 h1, .item-2 h1, .item-3 h1{
+    line-height: 2;
+}
+.addres .item-1 p, .item-2 p, .item-3 p{
+    line-height: 1.7;
+}
+.social-footer{
+    position: absolute;
+    bottom: -40px;
+}
+.social-footer .bx{
+    color:  #C42126;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 5px;
+}
